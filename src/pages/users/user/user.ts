@@ -10,9 +10,9 @@ import { NavParams, NavController } from "ionic-angular";
 export class UserPage implements OnInit {
   name: string;
 
-  constructor (
-    private navParams: NavParams,
-    private navCtrl: NavController){}
+  constructor( private navParams: NavParams,
+              private navCtrl: NavController){
+  }
 
   ngOnInit(){
     this.name = this.navParams.get('userName');
